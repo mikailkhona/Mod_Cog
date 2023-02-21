@@ -13,6 +13,8 @@ The "int" extension can be added to tasks with a delay period such as dms, dnms,
 
 In principle, both these extensions can be added to a task to increase its complexity. 
 
+## Installation
+
 ## Contact
 If you have questions or suggestions (or find mistakes) please email me at mikailkhona at gmail dot com.
 
@@ -33,5 +35,4 @@ https://arxiv.org/abs/2207.03523
     title     = {Winning the lottery with neurobiology: faster learning on many cognitive tasks with fixed sparse RNNs},
     journal   = {arXiv}
 }
-
 ```
