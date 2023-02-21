@@ -21,6 +21,14 @@ To have a playground where you can customize, visualize and possibly build on th
 
 ## Installation
 
+First, install <a href= 'https://github.com/neurogym/neurogym'>neurogym</a>.
+```python
+pip install -U gym==0.18.3
+git clone https://github.com/neurogym/neurogym.git
+cd neurogym
+pip install -e .
+```
+
 ## Contact
 If you have questions or suggestions (or find mistakes) please email me at mikailkhona at gmail dot com.
 
