@@ -21,12 +21,18 @@ To have a playground where you can customize, visualize and possibly build on th
 
 ## Installation
 
-First, install <a href= 'https://github.com/neurogym/neurogym#Installation'>neurogym</a>.
+First, install <a href= 'https://github.com/neurogym/neurogym#Installation'>neurogym</a>:
 ```python
 pip install -U gym==0.18.3
 git clone https://github.com/neurogym/neurogym.git
 cd neurogym
 pip install -e .
+```
+Next install Mod-Cog and import the tasks:
+
+```python
+git clone ttps://github.com/mikailkhona/Mod_Cog.git
+from Mod_Cog.mod_cog_tasks import *
 ```
 
 ## Contact
