@@ -13,6 +13,9 @@ The "int" extension can be added to tasks with a delay period such as dms, dnms,
 
 In principle, both these extensions can be added to a task to increase its complexity. 
 
+## Explore
+To have a playground where you can customize, visualize and possibly build on these tasks, I have created a minimal Colab notebook: https://colab.research.google.com/drive/1nzfOmJuVQ-GzbzP5oNarBk0o3XuOetMQ?usp=sharing
+
 ## Installation
 
 ## Contact
