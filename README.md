@@ -16,8 +16,8 @@ In principle, both these extensions can be added to a task to increase its compl
 ## Contact
 If you have questions or suggestions (or find mistakes) please email me at mikailkhona at gmail dot com.
 
-## Citation statement
-Please cite the following publication if you use these tasks:
+## BibTeX Citation
+If you use Mod-Cog in a scientific publication, we would appreciate using the following citations
 
 Winning the lottery with neurobiology: faster learning on many cognitive tasks with fixed sparse RNNs
 
@@ -25,4 +25,13 @@ Mikail Khona*, Sarthak Chandra*, Joy J. Ma, Ila Fiete
 
 https://arxiv.org/abs/2207.03523
 
-BibTex:
+```
+@article{Khona2022,
+    url       = {[https://arxiv.org/abs/2207.03523]},
+    year      = {2022},
+    author    = {Mikail Khona* and Sarthak Chandra* and Joy J. Ma and Ila Fiete},
+    title     = {Winning the lottery with neurobiology: faster learning on many cognitive tasks with fixed sparse RNNs},
+    journal   = {arXiv}
+}
+
+```
