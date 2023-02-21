@@ -30,7 +30,7 @@ pip install -e .
 ```
 
 ## Contact
-If you have questions or suggestions (or find mistakes) please email me at mikailkhona at gmail dot com.
+If you have questions or suggestions (or find mistakes) please email me at mikailkhona@gmail.com.
 
 ## BibTeX Citation
 If you use Mod-Cog in a scientific publication, we would appreciate using the following citations
