@@ -3,9 +3,12 @@ import gym
 import neurogym as ngym
 from neurogym import spaces
 from neurogym.wrappers.block import ScheduleEnvs
+from neurogym.wrappers import ScheduleEnvs
+from neurogym.utils.scheduler import SequentialSchedule
+from neurogym.utils.scheduler import RandomSchedule
+from neurogym.wrappers.block import MultiEnvs
 from neurogym.utils import scheduler
 from neurogym.core import TrialWrapper
-import torch
 import matplotlib.pyplot as plt
 
 def _get_dist(original_dist):
