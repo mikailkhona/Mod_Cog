@@ -39,7 +39,7 @@ from Mod_Cog.mod_cog_tasks import *
 If you have questions or suggestions (or find mistakes) please email me at mikailkhona@gmail.com.
 
 ## BibTeX Citation
-If you use Mod-Cog in a scientific publication, we would appreciate using the following citations
+If you use Mod-Cog in a scientific publication, we would appreciate using the following citation:
 
 Winning the lottery with neurobiology: faster learning on many cognitive tasks with fixed sparse RNNs
 
