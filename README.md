@@ -31,7 +31,7 @@ pip install -e .
 Next install Mod-Cog and import the tasks:
 
 ```python
-git clone ttps://github.com/mikailkhona/Mod_Cog.git
+git clone https://github.com/mikailkhona/Mod_Cog.git
 from Mod_Cog.mod_cog_tasks import *
 ```
 
