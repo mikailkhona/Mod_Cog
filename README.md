@@ -65,6 +65,11 @@ ob_size = env.observation_space.shape[0]
 act_size = env.action_space.n
 ```
 
+To draw samples, use neurogym's dataset class:
+```python
+inputs, labels = dataset()
+```
+
 ## Contact
 If you have questions or suggestions (or find mistakes) please email me at mikailkhona@gmail.com.
 
