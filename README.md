@@ -41,6 +41,7 @@ You can create a neurogym dataset with these tasks using the following code:
 from neurogym.wrappers import ScheduleEnvs
 from neurogym.utils.scheduler import RandomSchedule
 from neurogym.wrappers.block import MultiEnvs
+from neurogym import Dataset
 
 envs = [go(), rtgo(), dlygo(), anti(), rtanti(), dlyanti(),
         dm1(), dm2(), ctxdm1(), ctxdm2(), multidm(), dlydm1(), dlydm2(),
@@ -59,7 +60,7 @@ tasks = list(map(lambda x: x[:-2],tmp.split(",")))
 env_analysis = MultiEnvs(envs, env_input = True)
 schedule = RandomSchedule(len(envs))
 env = ScheduleEnvs(envs, schedule=schedule, env_input=True)
-dataset = ngym.Dataset(env, batch_size=4, seq_len=350)
+dataset = Dataset(env, batch_size=4, seq_len=350)
 env = dataset.env
 ob_size = env.observation_space.shape[0]
 act_size = env.action_space.n
