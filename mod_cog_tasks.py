@@ -12,7 +12,7 @@ from neurogym.core import TrialWrapper
 import matplotlib.pyplot as plt
 
 def _get_dist(original_dist):
-    '''Get the distance in periodic boundary conditions'''
+    """Get the distance in periodic boundary conditions"""
     return np.minimum(abs(original_dist), 2 * np.pi - abs(original_dist))
 
 
@@ -46,7 +46,7 @@ class _MultiModalityStimulus(TrialWrapper):
         return self.env.new_trial(**kwargs)
 
 class EnvWithAdditions(ngym.TrialEnv):
-          
+       """ Wrapper around neurogym's TrialEnv to allow for time varying outputs"""
     def _init_gt(self):
         """Initialize trial with ground_truth."""
         tmax_ind = int(self._tmax / self.dt)
