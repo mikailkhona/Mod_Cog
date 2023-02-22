@@ -35,6 +35,36 @@ git clone https://github.com/mikailkhona/Mod_Cog.git
 from Mod_Cog.mod_cog_tasks import *
 ```
 
+You can create a neurogym dataset with these tasks using the following code:
+
+```python
+from neurogym.wrappers import ScheduleEnvs
+from neurogym.utils.scheduler import RandomSchedule
+from neurogym.wrappers.block import MultiEnvs
+
+envs = [go(), rtgo(), dlygo(), anti(), rtanti(), dlyanti(),
+        dm1(), dm2(), ctxdm1(), ctxdm2(), multidm(), dlydm1(), dlydm2(),
+        ctxdlydm1(), ctxdlydm2(), multidlydm(), dms(), dnms(), dmc(), dnmc(),
+        dlygointr(),dlygointl(),dlyantiintr(),dlyantiintl(),dlyantiintr(),dlyantiintl(),dlydm1intr(),dlydm1intl(),
+        dlydm2intr(),dlydm2intl(),ctxdlydm1intr(),ctxdlydm1intl(),ctxdlydm2intr(),ctxdlydm2intl(),
+        multidlydmintr(),multidlydmintl(),dmsintr(),dmsintl(),dnmsintr(),dnmsintl(),dmcintr(),dmcintl(),dnmcintr(),dnmcintl(),
+        goseqr(), rtgoseqr(), dlygoseqr(), antiseqr(), rtantiseqr(), dlyantiseqr(), dm1seqr(), dm2seqr(), ctxdm1seqr(), ctxdm2seqr(), multidmseqr(), dlydm1seqr(),
+        dlydm2seqr(),ctxdlydm1seqr(), ctxdlydm2seqr(), multidlydmseqr(), dmsseqr(), dnmsseqr(), dmcseqr(), dnmcseqr(),
+        goseql(), rtgoseql(), dlygoseql(), antiseql(), rtantiseql(), dlyantiseql(), dm1seql(), dm2seql(), ctxdm1seql(), ctxdm2seql(), multidmseql(), dlydm1seql(),
+        dlydm2seql(),ctxdlydm1seql(), ctxdlydm2seql(), multidlydmseql(), dmsseql(), dnmsseql(), dmcseql(), dnmcseql()]
+        
+tmp = "go(), rtgo(), dlygo(), anti(), rtanti(), dlyanti(), dm1(), dm2(), ctxdm1(), ctxdm2(), multidm(), dlydm1(), dlydm2(), ctxdlydm1(), ctxdlydm2(), multidlydm(), dms(), dnms(), dmc(), dnmc(), dlygointr(),dlygointl(),dlyantiintr(),dlyantiintl(),dlyantiintr(),dlyantiintl(),dlydm1intr(),dlydm1intl(),dlydm2intr(),dlydm2intl(),ctxdlydm1intr(),ctxdlydm1intl(),ctxdlydm2intr(),ctxdlydm2intl(), multidlydmintr(),multidlydmintl(),dmsintr(),dmsintl(),dnmsintr(),dnmsintl(),dmcintr(),dmcintl(),dnmcintr(),dnmcintl(),goseqr(), rtgoseqr(), dlygoseqr(), antiseqr(), rtantiseqr(), dlyantiseqr(), dm1seqr(), dm2seqr(), ctxdm1seqr(), ctxdm2seqr(), multidmseqr(), dlydm1seqr(), dlydm2seqr(),ctxdlydm1seqr(), ctxdlydm2seqr(), multidlydmseqr(), dmsseqr(), dnmsseqr(), dmcseqr(), dnmcseqr(),goseql(), rtgoseql(), dlygoseql(), antiseql(), rtantiseql(), dlyantiseql(), dm1seql(), dm2seql(), ctxdm1seql(), ctxdm2seql(), multidmseql(), dlydm1seql(), dlydm2seql(),ctxdlydm1seql(), ctxdlydm2seql(), multidlydmseql(), dmsseql(), dnmsseql(), dmcseql(), dnmcseql()"
+tasks = list(map(lambda x: x[:-2],tmp.split(",")))
+
+env_analysis = MultiEnvs(envs, env_input = True)
+schedule = RandomSchedule(len(envs))
+env = ScheduleEnvs(envs, schedule=schedule, env_input=True)
+dataset = ngym.Dataset(env, batch_size=4, seq_len=350)
+env = dataset.env
+ob_size = env.observation_space.shape[0]
+act_size = env.action_space.n
+```
+
 ## Contact
 If you have questions or suggestions (or find mistakes) please email me at mikailkhona@gmail.com.
 
