@@ -29,7 +29,7 @@ git clone https://github.com/neurogym/neurogym.git
 cd neurogym
 pip install -e .
 ```
-Next install Mod-Cog:
+Next install Mod-Cog. Note that Mod-Cog creates wrappers around some of neurogym's core functions.
 
 ```python
 git clone https://github.com/mikailkhona/Mod_Cog.git
