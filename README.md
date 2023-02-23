@@ -28,11 +28,11 @@ git clone https://github.com/neurogym/neurogym.git
 cd neurogym
 pip install -e .
 ```
-Next install Mod-Cog and import the tasks:
+Next install Mod-Cog:
 
 ```python
 git clone https://github.com/mikailkhona/Mod_Cog.git
-from Mod_Cog.mod_cog_tasks import *
+
 ```
 
 You can create a neurogym dataset with these tasks using the following code:
@@ -42,6 +42,7 @@ from neurogym.wrappers import ScheduleEnvs
 from neurogym.utils.scheduler import RandomSchedule
 from neurogym.wrappers.block import MultiEnvs
 from neurogym import Dataset
+from Mod_Cog.mod_cog_tasks import *
 
 envs = [go(), rtgo(), dlygo(), anti(), rtanti(), dlyanti(),
         dm1(), dm2(), ctxdm1(), ctxdm2(), multidm(), dlydm1(), dlydm2(),
