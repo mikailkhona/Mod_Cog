@@ -46,7 +46,7 @@ class _MultiModalityStimulus(TrialWrapper):
         return self.env.new_trial(**kwargs)
 
 class EnvWithAdditions(ngym.TrialEnv):
-       """ Wrapper around neurogym's TrialEnv to allow for time varying outputs"""
+    """ Wrapper around neurogym's TrialEnv to allow for time varying outputs"""
     def _init_gt(self):
         """Initialize trial with ground_truth."""
         tmax_ind = int(self._tmax / self.dt)
