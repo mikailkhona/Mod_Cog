@@ -10,7 +10,7 @@ The "int" extension asks for a delay-dependent shift in the location of the bump
 The "seq" extension can be added to any task, with either "r" or "l". This triples the number of tasks to 60.
 <img width="1027" alt="image" src="https://user-images.githubusercontent.com/49488315/220438786-8c95d34f-f86e-4762-a198-4af4f9863f51.png">
 
-The "int" extension can be added to tasks with a delay period such as dms, dnms, dmc, dnmc, dlygo, dlyanti, ctxdlydm1, ctxdlydm2, again with either "r" or "l".
+The "int" extension can be added to tasks with a delay period such as dms, dnms, dmc, dnmc, dlygo, dlyanti, dlydm1, dlydm2, ctxdlydm1, ctxdlydm2, multidlydm again with either "r" or "l".
 <img width="1027" alt="image" src="https://user-images.githubusercontent.com/49488315/220438845-1eea5a1f-e0cb-444c-b586-f6c22b5b93bb.png">
 
 In principle, both these extensions can be added to a task to increase its complexity. This increases the number of tasks to 132. 
@@ -36,7 +36,7 @@ git clone https://github.com/mikailkhona/Mod_Cog.git
 
 ```
 
-You can create a neurogym dataset with 84 tasks using the following code:
+You can create a neurogym dataset with 82 tasks using the following code:
 
 ```python
 from neurogym.wrappers import ScheduleEnvs
@@ -48,9 +48,9 @@ from Mod_Cog.mod_cog_tasks import *
 envs = [go(), rtgo(), dlygo(), anti(), rtanti(), dlyanti(),
         dm1(), dm2(), ctxdm1(), ctxdm2(), multidm(), dlydm1(), dlydm2(),
         ctxdlydm1(), ctxdlydm2(), multidlydm(), dms(), dnms(), dmc(), dnmc(),
-        dlygointr(),dlygointl(),dlyantiintr(),dlyantiintl(),dlyantiintr(),dlyantiintl(),
-        dlydm1intr(),dlydm1intl(),dlydm2intr(),dlydm2intl(),ctxdlydm1intr(),ctxdlydm1intl(),
-        ctxdlydm2intr(),ctxdlydm2intl(),multidlydmintr(),multidlydmintl(),dmsintr(),dmsintl(),dnmsintr(),
+        dlygointr(),dlygointl(),dlyantiintr(),dlyantiintl(),dlydm1intr(),dlydm1intl(),
+        dlydm2intr(),dlydm2intl(),ctxdlydm1intr(),ctxdlydm1intl(),ctxdlydm2intr(),ctxdlydm2intl(),
+        multidlydmintr(),multidlydmintl(),dmsintr(),dmsintl(),dnmsintr(),
         dnmsintl(),dmcintr(),dmcintl(),dnmcintr(),dnmcintl(), goseqr(), rtgoseqr(), dlygoseqr(), 
         antiseqr(), rtantiseqr(), dlyantiseqr(), dm1seqr(), dm2seqr(), ctxdm1seqr(), ctxdm2seqr(), 
         multidmseqr(), dlydm1seqr(),dlydm2seqr(),ctxdlydm1seqr(), ctxdlydm2seqr(), multidlydmseqr(),
