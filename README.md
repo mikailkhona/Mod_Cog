@@ -14,6 +14,7 @@ The "int" extension can be added to tasks with a delay period such as dms, dnms,
 <img width="1027" alt="image" src="https://user-images.githubusercontent.com/49488315/220438845-1eea5a1f-e0cb-444c-b586-f6c22b5b93bb.png">
 
 In principle, both these extensions can be added to a task to increase its complexity. This increases the number of tasks to 132. 
+
 <img width="713" alt="image" src="https://user-images.githubusercontent.com/49488315/220438977-90110654-6cdd-4fd5-9e11-cba3143d75aa.png">
 
 ## Explore
