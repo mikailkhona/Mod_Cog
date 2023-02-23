@@ -62,10 +62,10 @@ dataset = Dataset(env, batch_size=4, seq_len=350)
 env = dataset.env
 ob_size = env.observation_space.shape[0]
 act_size = env.action_space.n
-```
 
-To draw samples, use neurogym's dataset class:
-```python
+
+# To draw samples, use neurogym's dataset class:
+
 inputs, labels = dataset()
 ```
 
