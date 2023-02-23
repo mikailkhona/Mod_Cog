@@ -35,7 +35,7 @@ git clone https://github.com/mikailkhona/Mod_Cog.git
 
 ```
 
-You can create a neurogym dataset with these tasks using the following code:
+You can create a neurogym dataset with 84 tasks using the following code:
 
 ```python
 from neurogym.wrappers import ScheduleEnvs
