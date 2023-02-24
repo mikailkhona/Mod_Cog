@@ -18,7 +18,7 @@ In principle, both these extensions can be added to a task to increase its compl
 <img width="713" alt="image" src="https://user-images.githubusercontent.com/49488315/220438977-90110654-6cdd-4fd5-9e11-cba3143d75aa.png">
 
 ## Explore
-To have a playground where you can customize, visualize and possibly build on these tasks, I have created a minimal Colab notebook: https://colab.research.google.com/drive/1nzfOmJuVQ-GzbzP5oNarBk0o3XuOetMQ?usp=sharing
+To have a playground where you can customize, visualize and possibly build on these tasks, We have created a minimal Colab notebook: https://colab.research.google.com/drive/1nzfOmJuVQ-GzbzP5oNarBk0o3XuOetMQ?usp=sharing
 
 ## Installation
 
